@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -47,8 +47,8 @@
                         <div class="scale">
                             <div class="bar" style="width: 62%; margin-left: 7%;"></div>
                         </div>
-                        <div class="toggle toggle-min" tabindex="0" style="left: 7%"></div>
-                        <div class="toggle toggle-max" tabindex="0" style="left: 62%"></div>
+                        <div class="toggle toggle-min" tabindex="0" style="left: 7%" aria-label="Минимальная цена"></div>
+                        <div class="toggle toggle-max" tabindex="0" style="left: 62%" aria-label="Максимальная цена"></div>
                     </div>
                 </div>
                 <div class="price-controls">
@@ -189,17 +189,17 @@
 
                 <div class="website__pages">
                     <ul class="pages__list">
-                        <li class="pages__item pages__number page--active">
-                            <a href="">1</a>
+                        <li class="pages__item pages__number page--active" tabindex="0">
+                            <a>1</a>
                         </li>
-                        <li class="pages__item pages__number">
-                            <a href="">2</a>
+                        <li class="pages__item pages__number" tabindex="0">
+                            <a>2</a>
                         </li>
-                        <li class="pages__item pages__number">
-                            <a href="">3</a>
+                        <li class="pages__item pages__number" tabindex="0">
+                            <a>3</a>
                         </li>
-                        <li class="pages__item pages__next">
-                            <a href="">Следующая</a>
+                        <li class="pages__item pages__next" tabindex="0">
+                            <a>Следующая</a>
                         </li>
                     </ul>
                 </div>
@@ -208,7 +208,7 @@
     </main>
 
     <footer class="page-footer">
-        <section class="map-wrapper">
+        <section class="map-wrapper map-wrapper-nomain">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.8462408448414!2d30.322845552968257!3d59.938971783399744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1594358364335!5m2!1sru!2sru "
                 width="1440" height="416" allowfullscreen>
             </iframe>
@@ -221,7 +221,7 @@
             </div>
         </section>
 
-        <div class="social container">
+        <div class="social social-nomain container">
             <div class="social__text">
                 <h2 class="social__title">Давайте дружить, это выгодно!</h2>
                 <p class="social__paragraph">Скидка 10% для друзей из социальных сетей.</p>

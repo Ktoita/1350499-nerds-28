@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -36,9 +36,9 @@
         </nav>
 
         <section class="slider container">
-            <input class="visually-hidden button-slide-1" type="radio" id="slide-1" name="toggle" checked>
-            <input class="visually-hidden button-slide-2" type="radio" id="slide-2" name="toggle">
-            <input class="visually-hidden button-slide-3" type="radio" id="slide-3" name="toggle">
+            <input class="visually-hidden button-slide-1" type="radio" id="slide-1" name="toggle" aria-label="Первый слайд" checked>
+            <input class="visually-hidden button-slide-2" type="radio" id="slide-2" name="toggle" aria-label="Второй слайд">
+            <input class="visually-hidden button-slide-3" type="radio" id="slide-3" name="toggle" aria-label="Третий слайд">
 
             <div class="slider__controls">
                 <label for="slide-1"></label>
