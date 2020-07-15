@@ -1,4 +1,4 @@
-/* 
+/*
 Fonts - start
 -------------
 */
@@ -90,7 +90,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    max-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
@@ -131,6 +131,7 @@ input[type="radio"].visually-hidden {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     margin: 0;
 }
@@ -139,6 +140,7 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 
 input[type=number] {
+    -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
 }
@@ -336,22 +338,24 @@ Header - start
 .slide__paragraph {
     display: inline-block;
     vertical-align: middle;
+    font-size: 16px;
+    line-height: 24px;
     color: var(--basick-black-light);
     max-width: 420px;
     margin: 0;
     padding: 0;
-    margin-top: 25px;
+    margin-top: 28px;
 }
 
 .slide__button {
     padding: 10px 54px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .slider__controls {
     position: absolute;
-    bottom: 95px;
-    left: 535px;
+    bottom: 97px;
+    left: 537px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -458,6 +462,8 @@ Main - start
 .production__paragraph {
     display: inline-block;
     vertical-align: middle;
+    font-size: 16px;
+    line-height: 24px;
     max-width: 260px;
     margin: 0;
     margin-top: 16px;
@@ -465,7 +471,7 @@ Main - start
 }
 
 .production__button {
-    padding: 15px 40px;
+    padding: 13px 40px;
     margin-top: 32px;
 }
 
@@ -546,7 +552,7 @@ Main - start
     text-transform: uppercase;
     max-width: 400px;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 42px;
 }
 
 .information__list {
@@ -743,6 +749,14 @@ Main - start
 
 /*map-wrapper-start*/
 
+.page-footer {
+    margin-top: 80px;
+}
+
+.page-footer-nomain {
+    margin-top: 58px;
+}
+
 .map-wrapper {
     position: relative;
     min-width: 1440px;
@@ -752,17 +766,17 @@ Main - start
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-top: 80px;
-}
-
-.map-wrapper-nomain {
-    margin-top: 60px;
 }
 
 .map-wrapper iframe {
+    position: absolute;
     width: 100%;
     height: 416px;
     border: 0;
+}
+
+.map-wrapper img {
+    position: absolute;
 }
 
 
@@ -772,16 +786,17 @@ Main - start
 /*Contacts-start*/
 
 .contacts {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 54px;
-    left: 180px;
+    top: 53px;
     background-color: var(--basic-white);
+    max-width: 319px;
+    padding-top: 52px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 49px;
-    padding-bottom: 47px;
+    padding-bottom: 46px;
+    box-sizing: border-box;
 }
 
 .contacts__name {
@@ -809,7 +824,7 @@ Main - start
 }
 
 .contacts__phone {
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .contacts__phone a:hover,
@@ -836,7 +851,7 @@ Main - start
 .catalog-main {
     display: grid;
     grid-template-columns: 1fr auto;
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 
@@ -860,9 +875,10 @@ Main - start
 
 .filter__item legend {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-weight: bold;
+    margin-bottom: 3px;
 }
 
 
@@ -870,7 +886,7 @@ Main - start
 
 .range-filter {
     width: 260px;
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 .range-controls {
@@ -881,7 +897,6 @@ Main - start
     padding-left: 20px;
     background-color: var(--basic-white-extra-dark);
     border-radius: 5px;
-    margin-bottom: 15px;
 }
 
 .range-controls .scale {
@@ -925,6 +940,7 @@ Main - start
 .price-controls {
     display: flex;
     justify-content: space-between;
+    margin-top: 14px;
 }
 
 .price-controls label {
@@ -960,23 +976,25 @@ Main - start
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-top: 15px;
+    margin-top: 13px;
 }
 
 .grid__item {
     position: relative;
     display: inline-block;
     vertical-align: middle;
+    font-size: 16px;
+    line-height: 19px;
     color: var(--basick-black-light);
     max-width: 100%;
-    padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 37px;
-    margin-bottom: 12px;
+    margin-bottom: 19px;
 }
 
 .grid__item:last-child {
     margin: 0;
+    margin-top: -5px;
 }
 
 .grid__item label {
@@ -989,7 +1007,7 @@ Main - start
     position: absolute;
     width: 25px;
     height: 25px;
-    top: 0;
+    top: -2px;
     left: 0;
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
@@ -1003,7 +1021,7 @@ Main - start
     position: absolute;
     width: 25px;
     height: 25px;
-    top: 0;
+    top: -2px;
     left: 0;
     background-image: url("../img/radio-on.svg");
     background-repeat: no-repeat;
@@ -1032,14 +1050,14 @@ Main - start
 /*filter-features*/
 
 .filter-features {
-    margin-top: 45px;
+    margin-top: 41px;
 }
 
 .features__list {
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
 .features__item label {
@@ -1109,7 +1127,7 @@ Main - start
     padding-top: 16px;
     padding-bottom: 16px;
     border: none;
-    margin-top: 50px;
+    margin-top: 48px;
 }
 
 .filter__button:hover,
@@ -1153,6 +1171,7 @@ Main - start
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-top: 5px;
 }
 
 .top-sorting__title {
@@ -1172,6 +1191,7 @@ Main - start
     list-style: none;
     margin-left: -27px;
     margin-right: 47px;
+    margin-top: 1px;
 }
 
 .top-sorting__item {
@@ -1205,6 +1225,7 @@ Main - start
     flex-direction: row;
     justify-content: space-between;
     margin-left: -18px;
+    margin-top: 5px;
 }
 
 .order-sorting__link {
@@ -1352,7 +1373,8 @@ Main - start
 }
 
 .website__pages {
-    margin-top: 45px;
+    margin-top: 46px;
+    margin-left: 2px;
 }
 
 .pages__list {
@@ -1441,7 +1463,7 @@ Footer - start
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 65px;
+    padding-top: 68px;
     padding-bottom: 74px;
 }
 
@@ -1459,8 +1481,10 @@ Footer - start
 .social__title {
     font-size: 36px;
     line-height: 36px;
-    font-weight: bold;
+    font-weight: 500;
+    font-style: normal;
     margin: 0;
+    margin-left: 2px;
 }
 
 .social__paragraph {
